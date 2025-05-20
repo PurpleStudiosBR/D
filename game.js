@@ -1,5 +1,5 @@
 // FUTBOT Neon Evolution - IA sempre vai atrás da bola, alterna ataque/defesa baseado na área, sempre visa o gol, pode chutar em qualquer direção
-// Corrigido: troca de par nunca trava (animações e timers SEMPRE reiniciados corretamente)
+// Corrigido: troca de par (ex: 2 de 10) nunca trava, sempre reinicia o loop e as IAs continuam jogando normalmente
 
 const CANVAS = document.getElementById('game-canvas');
 const CTX = CANVAS.getContext('2d');
@@ -295,8 +295,6 @@ function inAttackArea(robot) {
 function iaAreaMode(self, timeArr, adversArr, bola, side) {
   // IA sempre persegue a bola, ajustando ataque/defesa conforme a área
   let genes = self.genome;
-  let mate = timeArr.find(r => r !== self);
-
   // Sempre persegue a bola
   let targetX = bola.x;
   let targetY = bola.y;
