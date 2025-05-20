@@ -1,4 +1,5 @@
 // FUTBOT Neon Evolution - IA sempre vai atrás da bola, alterna ataque/defesa baseado na área, sempre visa o gol, pode chutar em qualquer direção
+// Corrigido: troca de par nunca trava (animações e timers SEMPRE reiniciados corretamente)
 
 const CANVAS = document.getElementById('game-canvas');
 const CTX = CANVAS.getContext('2d');
@@ -393,6 +394,7 @@ function playNextPair() {
   ballRandomInitialImpulse();
   updateScoreboard();
   updateTimer();
+  // Corrigido: SEMPRE cancela timers e animações antes de iniciar novo par
   if (animationFrame) cancelAnimationFrame(animationFrame);
   animationFrame = requestAnimationFrame(gameLoop);
   if (timerInterval) clearInterval(timerInterval);
@@ -476,8 +478,8 @@ function update() {
   if (goal) {
     if (goal === "azul") { score.azul++; } else { score.laranja++; }
     updateScoreboard();
-    showGoalMsg();
     clearInterval(timerInterval);
+    showGoalMsg();
     setTimeout(() => {
       centerAfterGoal();
       hideGoalMsg();
