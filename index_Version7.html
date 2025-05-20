@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Futebol de Robôs - FUTBOT Neon Evolution</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/609/609361.png" alt="Robô" class="icon-title">
+    <span class="titulo-neon">FUTBOT <span class="scratchday">Neon Evolution</span></span>
+  </h1>
+  <section class="game-container">
+    <canvas id="game-canvas" width="1200" height="600"></canvas>
+    <div class="gui-panel">
+      <div class="scoreboard">
+        <div class="team team-azul" id="team-azul-ui">
+          <span class="icon">💠</span>
+          <span class="name" id="azul-label">Time Azul</span>
+          <span class="score" id="score-azul">0</span>
+        </div>
+        <div class="timer-area"><span id="game-timer">02:00</span></div>
+        <div class="team team-laranja" id="team-laranja-ui">
+          <span class="icon">🔶</span>
+          <span class="name" id="laranja-label">Time Laranja</span>
+          <span class="score" id="score-laranja">0</span>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start-evol-btn">Iniciar Evolução</button>
+        <button id="final-btn" disabled>Jogar Final</button>
+        <button id="restart-btn" disabled>Reiniciar</button>
+        <label class="label-gen">Geração:</label>
+        <span id="gen-counter">1</span>
+        <label class="label-best">Melhor Score:</label>
+        <span id="best-score">0</span>
+      </div>
+      <div id="goal-msg" class="goal-msg">GOL!</div>
+      <div id="endgame-screen" class="endgame-screen">
+        <h2 id="endgame-title"></h2>
+        <p id="endgame-stats"></p>
+        <button id="endgame-restart-btn">Jogar Novamente</button>
+      </div>
+    </div>
+  </section>
+  <section class="instructions">
+    <h2>Como funciona</h2>
+    <ul>
+      <li>Cada time tem dois robôs IAs (“amigos”), cada um aprende a atacar e defender.</li>
+      <li>O campo, redes e elementos são modernos e coloridos, com efeitos neon.</li>
+      <li>A bola nunca para totalmente, e robôs não travam nem balançam loucamente.</li>
+      <li>Após evolução, jogue a <b>final</b> entre os melhores times!</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <span>Desenvolvido para o Scratch Day · FUTBOT Neon Evolution</span>
+</footer>
+<script src="game.js"></script>
+</body>
+</html>
