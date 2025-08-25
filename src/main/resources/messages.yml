@@ -1,0 +1,45 @@
+messages:
+  prefix: ""
+  no-permission: "§cVocê não possui permissão para isso!"
+  player-only: "§cApenas jogadores podem usar este comando!"
+  invalid-args: "§cUso incorreto do comando!"
+
+  lobby-set: "§aLobby principal definido!"
+  arena-created: "§aArena criada com sucesso!"
+  map-not-found: "§cMapa não encontrado!"
+
+  game:
+    joining: "§aEntrando na partida..."
+    full: "§cA partida está cheia!"
+    already-started: "§cA partida já começou!"
+    no-arenas: "§cNenhuma arena disponível no momento!"
+    player-joined: "%leaftags_tag_color%{player} &eentrou na partida (&b{current}&e/&b{max}&e)."
+    player-left: "%leaftags_tag_color%{player} &esaiu da partida (&b{current}&e/&b{max}&e)."
+    countdown: "§eA partida começará em §a{time} §esegundos!"
+    countdown-cancelled: "§cContagem regressiva cancelada! Jogadores insuficientes."
+    roles-selected: "§ePapéis selecionados! O jogo começará em breve."
+    wait-hiding: "§eAguarde enquanto os escondedores se escondem..."
+    hide-now: "§a§lESCONDA-SE! Você tem 30 segundos!"
+    start: "§a§lA CAÇADA COMEÇOU!"
+    became-seeker: "§cVocê morreu e agora é um procurador!"
+    player-became-seeker: "§e{player} §fse tornou um procurador!"
+    seekers-win: "§c§lOS PROCURADORES VENCERAM!"
+    hiders-win: "§a§lOS ESCONDEDORES VENCERAM!"
+    actionbar-time: "§fTempo restante: §a{time}"
+
+  map:
+    daily-limit: "§cVocê já selecionou um mapa hoje!"
+    favorite-added: "§aMapa §e{map} §aadicionado aos favoritos!"
+    favorite-removed: "§cMapa §e{map} §cremovido dos favoritos!"
+
+  spectator:
+    enabled: "§7Modo espectador ativado!"
+    disabled: "§7Modo espectador desativado!"
+    chat-format: "§7[SPEC] {player}: {message}"
+
+  level:
+    level-up: "§6§l✦ LEVEL UP! §fVocê alcançou o nível §6{level}§f!"
+    xp-gained: "§a+{xp} XP"
+
+  commands:
+    blocked: "§cComandos bloqueados durante a partida!"

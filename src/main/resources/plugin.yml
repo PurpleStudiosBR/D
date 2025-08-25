@@ -1,0 +1,40 @@
+name: PurpleEsconde
+version: 1.0.0
+main: br.com.purplemc.purpleesconde.PurpleEsconde
+author: matrixdev
+description: Minigame de Esconde-Esconde
+api-version: 1.8
+depend: []
+softdepend: [PlaceholderAPI, Citizens, Multiverse-Core, WorldEdit]
+
+commands:
+  purpleesconde:
+    description: Comando principal do PurpleEsconde
+    usage: /<command> [args]
+    permission: purpleesconde.admin
+    aliases: [pe]
+  edbuild:
+    description: Atalho para ativar/desativar modo construção
+    usage: /<command>
+    permission: purpleesconde.admin
+  ed:
+    description: Comando de construção
+    usage: /<command> build
+    permission: purpleesconde.admin
+
+permissions:
+  purpleesconde.admin:
+    description: Permissão de administrador
+    default: op
+  purpleesconde.build:
+    description: Permissão para construir
+    default: op
+  purpleesconde.favorite:
+    description: Permissão para favoritar mapas
+    default: op
+  purpleesconde.unlimited-maps:
+    description: Permissão para selecionar mapas ilimitados
+    default: op
+  purpleesconde.bypass-commands:
+    description: Permissão para usar comandos durante partidas
+    default: op

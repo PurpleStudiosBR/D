@@ -1,0 +1,61 @@
+settings:
+  max-players-per-arena: 16
+  min-players-to-start: 2
+  game-duration: 600
+  hiding-time: 30
+  lobby-items: false
+  barrier-material: "BARRIER"
+  barrier-height: 10
+  allowed-commands:
+    - "/msg"
+    - "/tell"
+    - "/r"
+    - "/reply"
+    - "/bw"
+    - "/g"
+    - "/global"
+    - "/l"
+    - "/local"
+    - "/gm"
+    - "/gamemode"
+    - "/effect"
+    - "/tp"
+    - "/l"
+    - "/lobby"
+    - "/hub"
+    - "/tell"
+    - "/r"
+    - "/reply"
+    - "/cash"
+    - "/points"
+    - "/admin"
+    - "/vanish"
+    - "/v"
+    - "/sc"
+    - "/staffchat"
+    - "/ban"
+    - "/punir"
+    - "/kick"
+    - "/mute"
+    - "/fake"
+    - "/invsee"
+    - "/fake list"
+    - "/report"
+    - "/reports"
+
+database:
+  type: "yaml"        # opções: yaml, mysql
+  host: "localhost"
+  port: 3306
+  database: "purpleesconde"
+  username: "root"
+  password: ""
+  table: "players"
+
+lobby:
+  world: "Lobby"
+  x: 0.0
+  y: 64.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0

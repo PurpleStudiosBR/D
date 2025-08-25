@@ -1,0 +1,39 @@
+scoreboard:
+  game:
+    title: "§b§lESCONDE ESCONDE"
+    lines:
+      - " "
+      - "&fTempo: &a{tempo}"
+      - " "
+      - "&fProcuradores:"
+      - "&c{seekers}"
+      - "&fEscondedores:"
+      - "&a{hiders}"
+      - " "
+      - "&apurplemc.net"
+  waiting:
+    title: "§b§lESCONDE ESCONDE"
+    lines:
+      - " "
+      - "§fMapa: §a{map}"
+      - "§fJogadores: §a{players}/{max_players}"
+      - "  "
+      - "{status}"
+      - " "
+      - "&apurplemc.net"
+  lobby:
+    title: "§b§lESCONDE ESCONDE"
+    lines:
+      - " "
+      - "&fSeu nível: {level}"
+      - " {xp_bar}"
+      - " "
+      - "&eGeral:"
+      - " &fVitórias: &a{wins}"
+      - " &fDerrotas: &a{losses}"
+      - " &fAbates: &a{kills}"
+      - " &fPartidas: &a{games}"
+      - ""
+      - "&fCash: &6%ypoints_points%"
+      - " "
+      - "&epurplemc.net"
